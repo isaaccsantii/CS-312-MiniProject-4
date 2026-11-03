@@ -1,0 +1,21 @@
+{
+  "name": "cs-312-miniproject-4-server",
+  "version": "1.0.0",
+  "description": "Express + PostgreSQL JSON API for the CS 312 Mini Project 4 React blog.",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "db:setup": "node db/setup-db.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "express-session": "^1.19.0",
+    "pg": "^8.23.1"
+  }
+}

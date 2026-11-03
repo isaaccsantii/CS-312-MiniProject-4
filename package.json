@@ -1,0 +1,17 @@
+{
+  "name": "cs-312-miniproject-4",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Blog web application using React.js, Node.js, Express.js and PostgreSQL (CS 312 Mini Project 4).",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "db:setup": "npm run db:setup --prefix server",
+    "dev": "concurrently -n api,react -c blue,magenta \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^10.0.6"
+  }
+}
